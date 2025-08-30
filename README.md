@@ -37,10 +37,10 @@ How do customer cohorts behave over time, and where does churn occur?
 2. **Cleaned Table:** clean + enrich → `real_table`  
    - dropped null customer IDs
    - calculated line revenue & month key  
-3. **Retention Mart:** cohort definitions → `cohort_ret_metrics`  
+3. **Retention Table:** cohort definitions → `cohort_ret_metrics`  
    - first purchase month = cohort_month  
    - calculated retention % by cohort & months since purchase  
-4. **KPI Mart:** overall active users & revenue → `kpi_timeseries`  
+4. **KPI Table:** overall active users & revenue → `kpi_timeseries`  
 5. **Export:** CSVs for Tableau visualization  
 
 ---
@@ -59,12 +59,10 @@ How do customer cohorts behave over time, and where does churn occur?
 ---
 
 ## Key Insights
-- **Month 1 drop-off:** X% of customers churn after the first month  
-- **By Month 3:** average retention falls below Y%  
-- **Cohort comparison:** newer cohorts show [higher/lower] retention vs older cohorts  
-- **Revenue trend:** overall monthly revenue peaked in [Month/Year]  
-
-*(Replace placeholders X, Y, etc. with your real findings once you inspect the dashboard.)*
+- **Month 1 drop-off:** ~80% of customers churn after the first month  
+- **By Month 3:** average retention steadies at 15-20%  
+- **Cohort comparison:** newer cohorts did not retain better than older ones
+- **Revenue trend:** rising revenue and new users were powered by new aquisitions, not more retention.
 
 ---
 
