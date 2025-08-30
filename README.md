@@ -9,7 +9,7 @@ How do customer cohorts behave over time, and where does churn occur?
 
 ---
 
-## Tools & Skills Demonstrated
+## Tools & Skills
 - **SQL (DuckDB):** staging, cleaning, table modeling with CTEs  
 - **Python (Jupyter):** SQL execution, data sanity checks, CSV export  
 - **Tableau Public:** cohort retention heatmap, retention curves, KPI trendlines, dashboard storytelling  
