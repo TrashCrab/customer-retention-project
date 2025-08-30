@@ -2,7 +2,7 @@
 
 ## Project Overview
 This project analyzes customer retention using the **[Online Retail II dataset](https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci)**.  
-I built a SQL data pipeline in DuckDB to transform raw transactional data into clean analytical tables, and then created an interactive Tableau dashboard to visualize cohort retention and key business KPIs.
+I built a SQL data pipeline in DuckDB to transform raw online shopping data into a clean analytical tables, and then created an interactive Tableau dashboard to view cohort retention and key business KPIs.
 
 **Business / Learning Question:**  
 How do customer cohorts behave over time, and where does churn occur?
@@ -10,10 +10,9 @@ How do customer cohorts behave over time, and where does churn occur?
 ---
 
 ## Tools & Skills
-- **SQL (DuckDB):** staging, cleaning, table modeling with CTEs  
-- **Python (Jupyter):** SQL execution, data sanity checks, CSV export  
+- **SQL (DuckDB):** staged, cleaned, and modeled tables 
+- **Python (Jupyter):** SQL execution, double check data, CSV export  
 - **Tableau Public:** cohort retention heatmap, retention curves, KPI trendlines, dashboard storytelling  
-- **Data Storytelling:** translating analytics into business insights  
 
 ---
 
@@ -68,8 +67,7 @@ How do customer cohorts behave over time, and where does churn occur?
 
 ## Executive Summary
 Customer retention analysis reveals that the majority of churn occurs immediately after the first purchase. 
-Across cohorts from 2009–2011, retention falls from 100% at onboarding to ~30–40% by the second month, and typically below 20% by month three. 
-While total active users and revenue trended upward through 2011, new cohorts did not retain better than earlier ones, suggesting growth was driven more by acquisition than loyalty. 
-These findings indicate that targeted onboarding and early re-engagement strategies would likely yield the greatest impact on long-term customer value.
+Across cohorts from 2009-2011, retention of customers after their first month of purchase falls to about 20% by the second month. After 3 months retention stabilizes at around 10-15%. New cohorts did not retain better than earlier ones, suggesting growth was driven more by acquisition than loyalty. 
+These findings indicate that onboarding customers into being repeat shoppers, and early re-engagement strategies, would likely have the greatest impact on long term customer retention. 
 
 ---
