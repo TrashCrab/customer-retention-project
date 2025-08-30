@@ -46,7 +46,7 @@ How do customer cohorts behave over time, and where does churn occur?
 ---
 
 ## Tableau Dashboard
-👉 [View Interactive Dashboard on Tableau Public](YOUR_LINK_HERE)
+👉 [View Interactive Dashboard on Tableau Public](https://public.tableau.com/views/RetentionProject-Dashboard/CustomerRetentionKPIOverview?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 **Dashboard Features:**
 - **Cohort Heatmap:** rows = cohort months, columns = months since first purchase, color = retention %  
