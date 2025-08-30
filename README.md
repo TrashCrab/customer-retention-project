@@ -35,12 +35,12 @@ How do customer cohorts behave over time, and where does churn occur?
 1. **Raw Staging:** load CSV → `base_table`  
 2. **Cleaned Table:** clean + enrich → `real_table`  
    - dropped null customer IDs
-   - calculated line revenue & month key  
+   - calculated revenue and month markers
 3. **Retention Table:** cohort definitions → `cohort_ret_metrics`  
    - first purchase month = cohort_month  
    - calculated retention % by cohort & months since purchase  
 4. **KPI Table:** overall active users & revenue → `kpi_timeseries`  
-5. **Export:** CSVs for Tableau visualization  
+5. **Export:** CSVs for Tableau processing and presentation
 
 ---
 
@@ -61,7 +61,7 @@ How do customer cohorts behave over time, and where does churn occur?
 - **Month 1 drop-off:** ~80% of customers churn after the first month  
 - **By Month 3:** average retention steadies at 15-20%  
 - **Cohort comparison:** newer cohorts did not retain better than older ones
-- **Revenue trend:** rising revenue and new users were powered by new aquisitions, not more retention.
+- **Revenue trend:** rising revenue and new users were powered by new aquisitions, not more retention
 
 ---
 
