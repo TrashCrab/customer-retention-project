@@ -22,9 +22,9 @@ How do customer cohorts behave over time, and where does churn occur?
     │── data/                   
     │   │── raw/                        # Original Data Set
     │   │── processed/                  # Exported Tables for Tableau
-    │       │── rention_monthly.csv 
+    │       │── retention_monthly.csv 
     │       │── kpit_timeseries.csv 
-    │── rention-project.ipynb           # Jupyter Notebooks with SQL pipeline
+    │── retention-project.ipynb           # Jupyter Notebooks with SQL pipeline
     │── deliverables
     │   │── dashboard.png               # Dashboard Screenshot
     │   │── executive_summary           # Brief Summary of findings
@@ -66,7 +66,7 @@ How do customer cohorts behave over time, and where does churn occur?
 
 ---
 
-## Exectuive Summary
+## Executive Summary
 Customer retention analysis reveals that the majority of churn occurs immediately after the first purchase. 
 Across cohorts from 2009–2011, retention falls from 100% at onboarding to ~30–40% by the second month, and typically below 20% by month three. 
 While total active users and revenue trended upward through 2011, new cohorts did not retain better than earlier ones, suggesting growth was driven more by acquisition than loyalty. 
