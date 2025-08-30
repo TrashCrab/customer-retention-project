@@ -2,15 +2,15 @@
 
 ## Project Overview
 This project analyzes customer retention using the **[Online Retail II dataset](https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci)**.  
-I built a **SQL data pipeline in DuckDB** to transform raw transactional data into clean analytical tables, and then created an **interactive Tableau dashboard** to visualize cohort retention and key business KPIs.
+I built a SQL data pipeline in DuckDB to transform raw transactional data into clean analytical tables, and then created an interactive Tableau dashboard to visualize cohort retention and key business KPIs.
 
-**Business Question:**  
+**Business / Learning Question:**  
 How do customer cohorts behave over time, and where does churn occur?
 
 ---
 
 ## Tools & Skills Demonstrated
-- **SQL (DuckDB):** staging, cleaning, fact/mart modeling with CTEs  
+- **SQL (DuckDB):** staging, cleaning, table modeling with CTEs  
 - **Python (Jupyter):** SQL execution, data sanity checks, CSV export  
 - **Tableau Public:** cohort retention heatmap, retention curves, KPI trendlines, dashboard storytelling  
 - **Data Storytelling:** translating analytics into business insights  
@@ -33,15 +33,14 @@ How do customer cohorts behave over time, and where does churn occur?
 
 
 ## Pipeline Steps
-1. **Raw Staging:** load CSV → `stg_retail`  
-2. **Fact Table:** clean + enrich → `fact_orders`  
-   - dropped null customer IDs  
-   - removed returns/negatives  
+1. **Raw Staging:** load CSV → `base_table`  
+2. **Cleaned Table:** clean + enrich → `real_table`  
+   - dropped null customer IDs
    - calculated line revenue & month key  
 3. **Retention Mart:** cohort definitions → `cohort_ret_metrics`  
    - first purchase month = cohort_month  
    - calculated retention % by cohort & months since purchase  
-4. **KPI Mart:** overall active users & revenue → `mart_kpi_timeseries`  
+4. **KPI Mart:** overall active users & revenue → `kpi_timeseries`  
 5. **Export:** CSVs for Tableau visualization  
 
 ---
